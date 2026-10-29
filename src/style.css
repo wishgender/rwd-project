@@ -1,0 +1,27 @@
+/* 
+    laz r
+    10-26-2026 14:57
+    style.css
+*/
+
+/* Import Meyer web reset */
+@import url('./reset.css');
+
+/* Import brand font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --gaffer-green-hex: #385956;
+    --gaffer-green-rgb: (56, 89, 86);
+
+}
+
+p {
+    font-family: 'Poppins';
+}
+
+h1 {
+    font-family: 'Poppins';
+    font-weight: bold;
+    text-transform: uppercase;
+}
