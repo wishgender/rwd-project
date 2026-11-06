@@ -1,0 +1,153 @@
+/* 
+    laz r
+    10-26-2026 14:57
+    style.css
+*/
+
+/* Import brand font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --gaffer-green-hex: #385956;
+    --gaffer-green-rgb: 56, 89, 86;
+
+    --pale-yellow-hex: #ffe77e;
+    --pale-yellow-rgb: 255, 231, 126;
+
+    --gaffer-green-pale-0: #EBEFEE;
+    --gaffer-green-pale-1: #D8DFDE;
+    --gaffer-green-pale-2: #C5CFCE;
+    --gaffer-green-pale-3: #B3BFBE;
+
+    --bs-primary: var(--pale-yellow-hex);
+    --bs-primary-rgb: var(--pale-yellow-rgb);
+
+    --bs-secondary: var(--gaffer-green-hex);
+    --bs-secondary-rgb: var(--gaffer-green-rgb);
+
+    --bs-body-color: var(--gaffer-green-hex);
+    --bs-body-bg: var(--gaffer-green-pale-2);
+
+    --bs-secondary-bg: var(--gaffer-green-pale-1);
+    --bs-tertiary-bg: var(--gaffer-green-pale-0);
+
+    --bs-border-color: var(--gaffer-green-pale-3);
+}
+
+main {
+    max-width: 1000px;
+    margin:auto;
+}
+
+p {
+    font-family: 'Poppins';
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
+h5 {
+    letter-spacing: 1px;
+}
+
+nav {
+    background-color: var(--bs-tertiary-bg);
+}
+
+
+#navbarNav {
+    background-color: var(--bs-secondary-bg);
+    border-radius: 5px;
+}
+
+#navbarNav li {
+
+}
+
+a.hilltop-btn {
+    color: white;
+    line-height: 1;
+    padding-top: 0.75rem;
+    padding-bottom: 0.9rem;
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+    background-color: var(--bs-secondary);
+    border-radius: 5px;
+    transition: background-color linear 0.3s;
+    transition: color linear 0.3s;
+}
+
+#navbarNav a.hilltop-btn {
+    border-radius: 0px 0px 5px 5px;
+}
+
+a.hilltop-btn:hover {
+    transition: background-color linear 0.3s;
+    transition: color linear 0.3s;
+    color: var(--bs-secondary);
+    background-color: var(--gaffer-green-pale-0);
+    outline: 1px solid var(--bs-secondary);
+}
+
+#carouselAutoplay div.carousel-item {
+    
+}
+
+#carouselAutoplay img {
+    object-fit: cover;
+    height: 200px;
+}
+
+main h2 {
+    color: #496764;
+}
+
+section#whatWeDo a.hilltop-btn {
+    
+    letter-spacing: 1px;
+}
+
+footer {
+    background-color: var(--gaffer-green-hex);
+    color: var(--gaffer-green-pale-0);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--gaffer-green-pale-0);
+}
+
+#subfooter {
+    background-color: #2B413F;
+}
+
+@media screen and (min-width: 992px) {
+    #navbarNav {
+        background-color: var(--bs-tertiary-bg);
+        border-radius: 0px;
+    }
+
+    #navbarNav a.hilltop-btn {
+        color: white;
+        line-height: 1;
+        padding-top: 0.75rem;
+        padding-bottom: 0.9rem;
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+        border-radius: 5px;
+        background-color: var(--bs-secondary);
+    }
+
+    #navbarNav a.hilltop-btn:hover {
+        color: var(--bs-secondary);
+        background-color: var(--gaffer-green-pale-0);
+        outline: 1px solid var(--bs-secondary);
+    }
+
+    
+#carouselAutoplay img {
+    height: 400px;
+}
+}
