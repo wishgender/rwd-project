@@ -38,6 +38,11 @@
     --gaffer-green-shade-8: #101515;
     --gaffer-green-shade-9: #080C0C;
 
+    --mountain-purple-hex: #463859;
+
+    --mountain-purple-tint-0: #EDEBEF;
+    --mountain-purple-tint-1: #DBD7DF;
+
     --bs-primary: var(--pale-yellow-hex);
     --bs-primary-rgb: var(--pale-yellow-rgb);
 
@@ -109,7 +114,8 @@ a.hilltop-btn {
     padding-bottom: 0.9rem;
     padding-left: 0.75rem !important;
     padding-right: 0.75rem !important;
-    background-color: var(--bs-secondary);
+    /* background-color: var(--bs-secondary); */
+    background-color: #463859;
     border-radius: 5px;
     transition: background-color linear 0.3s;
     transition: color linear 0.3s;
@@ -122,7 +128,8 @@ button.btn.btn-primary {
     font-size: 10pt;
     color: white;
     padding: 0.25rem;
-    background-color: var(--bs-secondary);
+    /* background-color: var(--bs-secondary); */
+    background-color: #463859;
     border-radius: 5px;
     transition: background-color linear 0.3s;
     transition: color linear 0.3s;
@@ -131,6 +138,7 @@ button.btn.btn-primary {
 #navbarNav a.hilltop-btn {
     display: block;
     border-radius: 0px 0px 5px 5px;
+    background-color: var(--gaffer-green-hex);
 }
 
 #navbarNav a.hilltop-btn[aria-current="page"],
@@ -167,6 +175,31 @@ h3.card-title {
 
 div.card-body p {
     font-size: 11pt;
+}
+
+/* About page content */
+
+section#team div.teamList {
+    text-align: left;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+section#team div.teamMember {
+    display: inline-block;
+    text-align: center;
+}
+
+section#team figure img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+span.showName {
+    font-weight: bold;
 }
 
 /* Contact page content */
