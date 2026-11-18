@@ -1,0 +1,306 @@
+/* 
+    laz r
+    10-26-2026 14:57
+    style.css
+*/
+
+/* Import brand font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --gaffer-green-hex: #385956;
+    --gaffer-green-rgb: 56, 89, 86;
+
+    --pale-yellow-hex: #ffe77e;
+    --pale-yellow-rgb: 255, 231, 126;
+
+    /* Tints of gaffer green */
+    --gaffer-green-tint-0: #EBEFEE;
+    --gaffer-green-tint-1: #D8DFDE;
+    --gaffer-green-tint-2: #C5CFCE;
+    --gaffer-green-tint-3: #B3BFBE;
+    --gaffer-green-tint-4: #A0B0AE;
+    --gaffer-green-tint-5: #8EA19F;
+    --gaffer-green-tint-6: #7C9290;
+    --gaffer-green-tint-7: #6B8381;
+    --gaffer-green-tint-8: #5A7572;
+    --gaffer-green-tint-9: #496764;
+
+    /* Shades of gaffer green */
+    --gaffer-green-shade-0: #33514E;
+    --gaffer-green-shade-1: #2F4946;
+    --gaffer-green-shade-2: #2B413F;
+    --gaffer-green-shade-3: #263937;
+    --gaffer-green-shade-4: #223230;
+    --gaffer-green-shade-5: #1D2A29;
+    --gaffer-green-shade-6: #192322;
+    --gaffer-green-shade-7: #151C1B;
+    --gaffer-green-shade-8: #101515;
+    --gaffer-green-shade-9: #080C0C;
+
+    --bs-primary: var(--pale-yellow-hex);
+    --bs-primary-rgb: var(--pale-yellow-rgb);
+
+    --bs-secondary: var(--gaffer-green-hex);
+    --bs-secondary-rgb: var(--gaffer-green-rgb);
+
+    --bs-body-color: var(--gaffer-green-hex);
+    --bs-body-bg: var(--gaffer-green-tint-2);
+
+    --bs-secondary-bg: var(--gaffer-green-tint-1);
+    --bs-tertiary-bg: var(--gaffer-green-tint-0);
+
+    --bs-border-color: var(--gaffer-green-tint-3);
+}
+
+main {
+    max-width: 1000px;
+    margin: 20px;
+    text-align: center;
+}
+
+p {
+    font-family: 'Poppins';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
+h5 {
+    letter-spacing: 1px;
+}
+
+nav {
+    background-color: var(--bs-tertiary-bg);
+}
+
+nav a[aria-current="page"] {
+    background-color: var(--gaffer-green-tint-3);
+    font-weight: bold;
+}
+
+nav a.nav-link:hover {
+    background-color: var(--gaffer-green-tint-2);
+}
+
+
+#navbarNav {
+    background-color: var(--bs-secondary-bg);
+    border-radius: 5px;
+}
+
+#navbarNav li {
+    letter-spacing: 1px;
+}
+
+a.hilltop-btn {
+    display: inline-block;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    line-height: 1.25;
+    padding-top: 0.75rem;
+    padding-bottom: 0.9rem;
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+    background-color: var(--bs-secondary);
+    border-radius: 5px;
+    transition: background-color linear 0.3s;
+    transition: color linear 0.3s;
+}
+
+button.btn.btn-primary {
+    display: block;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 10pt;
+    color: white;
+    padding: 0.25rem;
+    background-color: var(--bs-secondary);
+    border-radius: 5px;
+    transition: background-color linear 0.3s;
+    transition: color linear 0.3s;
+}
+
+#navbarNav a.hilltop-btn {
+    display: block;
+    border-radius: 0px 0px 5px 5px;
+}
+
+#navbarNav a.hilltop-btn[aria-current="page"],
+a.hilltop-btn:hover {
+    transition: background-color linear 0.3s;
+    transition: color linear 0.3s;
+    color: var(--bs-secondary);
+    background-color: var(--gaffer-green-tint-0);
+    outline: 1px solid var(--bs-secondary);
+}
+
+/* Homepage content */
+
+#carouselAutoplay div.carousel-item {}
+
+#carouselAutoplay img {
+    object-fit: cover;
+    height: 200px;
+}
+
+h2 {
+    color: var(--gaffer-green-tint-9);
+}
+
+h3 {
+    color: var(--gaffer-green-tint-8);
+}
+
+section#whatWeDo a.hilltop-btn {}
+
+h3.card-title {
+    font-size: 16pt;
+}
+
+div.card-body p {
+    font-size: 11pt;
+}
+
+/* Contact page content */
+
+section#forStudents {
+    padding-bottom: 1.0rem;
+    border-bottom: 1px solid var(--gaffer-green-hex);
+    margin-bottom: 1.0rem;
+}
+
+form {
+    background-color: var(--gaffer-green-tint-1);
+    border: solid 1px var(--gaffer-green-shade-7);
+    border-radius: 10px;
+    padding: 10px;
+
+    display: grid;
+    row-gap: 5px;
+    grid-template-columns: 25% 75%;
+}
+
+form label {
+    margin-right: 10px;
+    text-align: right;
+}
+
+form div.buttonWrapper {
+    grid-column-start: span 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+div.buttonWrapper button.btn.btn-primary {
+    /* width: fit-content; */
+    padding: 5px;
+}
+
+
+/* footer styles */
+
+footer {
+    background-color: var(--gaffer-green-hex);
+    color: var(--gaffer-green-tint-0);
+}
+
+footer img {
+    object-fit: contain;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--gaffer-green-tint-0);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#subfooter {
+    background-color: #2B413F;
+}
+
+
+/* Media queries */
+
+@media screen and (min-width: 576px) {
+    #carouselAutoplay img {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #carouselAutoplay img {
+        height: 400px;
+    }
+
+    main {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    form {
+        grid-template-columns: 15% 85%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #navbarNav {
+        background-color: var(--bs-tertiary-bg);
+        border-radius: 0px;
+    }
+
+    #navbarNav a:hover {
+        text-decoration: underline;
+    }
+
+    #navbarNav a {
+        background-color: transparent;
+    }
+
+    #navbarNav a[aria-current="page"]:hover {
+        text-decoration: none;
+    }
+
+    #navbarNav a.hilltop-btn {
+        color: white;
+        line-height: 1;
+        padding-top: 0.75rem;
+        padding-bottom: 0.9rem;
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+        border-radius: 5px;
+        background-color: var(--bs-secondary);
+    }
+
+    #navbarNav a.hilltop-btn:hover {
+        color: var(--bs-secondary);
+        background-color: var(--gaffer-green-tint-0);
+        outline: 1px solid var(--bs-secondary);
+    }
+
+    #carouselAutoplay img {
+        height: 400px;
+    }
+
+    main {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #carouselAutoplay img {
+        height: 500px;
+    }
+}

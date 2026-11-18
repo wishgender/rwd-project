@@ -18,6 +18,8 @@
     --gaffer-green-pale-1: #D8DFDE;
     --gaffer-green-pale-2: #C5CFCE;
     --gaffer-green-pale-3: #B3BFBE;
+    --gaffer-green-dark-0: #2B413F;
+    --gaffer-green-dark-1: #1D2A29;
 
     --bs-primary: var(--pale-yellow-hex);
     --bs-primary-rgb: var(--pale-yellow-rgb);
@@ -36,14 +38,18 @@
 
 main {
     max-width: 1000px;
-    margin:auto;
+    margin: auto;
 }
 
 p {
     font-family: 'Poppins';
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Poppins';
     font-weight: bold;
 }
@@ -63,12 +69,15 @@ nav {
 }
 
 #navbarNav li {
-
+    letter-spacing: 1px;
 }
 
 a.hilltop-btn {
+    display: inline-block;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     color: white;
-    line-height: 1;
+    line-height: 1.25;
     padding-top: 0.75rem;
     padding-bottom: 0.9rem;
     padding-left: 0.75rem !important;
@@ -80,6 +89,7 @@ a.hilltop-btn {
 }
 
 #navbarNav a.hilltop-btn {
+    display: block;
     border-radius: 0px 0px 5px 5px;
 }
 
@@ -91,9 +101,7 @@ a.hilltop-btn:hover {
     outline: 1px solid var(--bs-secondary);
 }
 
-#carouselAutoplay div.carousel-item {
-    
-}
+#carouselAutoplay div.carousel-item {}
 
 #carouselAutoplay img {
     object-fit: cover;
@@ -104,10 +112,7 @@ main h2 {
     color: #496764;
 }
 
-section#whatWeDo a.hilltop-btn {
-    
-    letter-spacing: 1px;
-}
+section#whatWeDo a.hilltop-btn {}
 
 footer {
     background-color: var(--gaffer-green-hex);
@@ -121,6 +126,18 @@ footer a {
 
 #subfooter {
     background-color: #2B413F;
+}
+
+@media screen and (min-width: 576px) {
+    #carouselAutoplay img {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #carouselAutoplay img {
+        height: 400px;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -146,8 +163,14 @@ footer a {
         outline: 1px solid var(--bs-secondary);
     }
 
-    
-#carouselAutoplay img {
-    height: 400px;
+
+    #carouselAutoplay img {
+        height: 500px;
+    }
 }
+
+@media screen and (min-width: 1200px) {
+    #carouselAutoplay img {
+        height: 600px;
+    }
 }
